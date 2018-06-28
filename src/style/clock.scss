@@ -4,8 +4,7 @@
     align-self: end;
 
     background: $color-gray-one;
-    text-align: center;
-
+    text-align: left;
     height: 75%;
     width: 100%;
 
@@ -15,11 +14,14 @@
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 275px));
+    grid-column-gap: 80px;
     align-items: center;
     justify-items: center;
     justify-content: center;
+    align-content: center;
 
     &__box {
+        margin-top: 24px;
         display: flex;
         flex-direction: column;
     }
