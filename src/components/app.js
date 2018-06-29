@@ -1,6 +1,4 @@
-
 import React, { Component } from "react";
-
 import Picker from "./picker";
 import Button from "./button";
 import Clock from "./clock";
@@ -75,7 +73,7 @@ export default class App extends Component {
     var countDownDate = bday.getTime();
 
     this.timer = setInterval(function() {
-      var now = new Date().getTime();
+      var now = moment().toDate().getTime();
 
       var distance = countDownDate - now;
 
